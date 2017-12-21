@@ -1,5 +1,7 @@
 ## Answers
 
+# Part 1
+
 var body = document.body;
 
 1. var profileImage = body.querySelector('.profile-image');
@@ -50,3 +52,25 @@ formSubmit.value = "En garde!";
 personalInfo.forEach(function(item) {
     item.innerText = "";
 });
+
+
+# Part 2
+
+## Removing Elements
+### 1
+$("#time-travel").parent().remove();
+
+## Adding Elements
+### 1
+var pikachu = body.querySelector('#right-image > img');
+var dupPikachu = pikachu.cloneNode();
+var element = document.querySelector('.portfolio-container');
+element.appendChild(dupPikachu);
+
+###2
+
+for (var i = 0; i <= 10; i++) {
+    element.appendChild(dupPikachu.cloneNode());
+};
+
+### 3 
